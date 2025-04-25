@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib  # To load the model
 import numpy as np
-from pathlib import Path
+
 
 # Load the model
 model_path = "C:/Users/lapt/Desktop/best_random_forest_model.pkl"
