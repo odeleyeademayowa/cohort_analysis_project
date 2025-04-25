@@ -4,8 +4,8 @@ import joblib  # To load the model
 import numpy as np
 
 
-# Load the model
-model_path = "C:/Users/lapt/Desktop/best_random_forest_model.pkl"
+# load the model
+model_path = r"C:\Users\lapt\Desktop\cohort_analysis_project\best_random_forest_model.pkl"
 model = joblib.load(model_path)
 
 st.title("📊 Customer Churn Prediction")
