@@ -2,9 +2,15 @@ import streamlit as st
 import pandas as pd
 import joblib  # To load the model
 import numpy as np
+from pathlib import Path
 
-# Load the trained model
-model = joblib.load(r'C:\Users\lapt\Desktop\cohort_analysis_project\notebooks\best_random_forest_model.pkl')
+# Get the desktop path regardless of OS
+desktop_path = Path.home() / "Desktop"
+model_path = desktop_path / "best_random_forest_model.pkl"
+
+# Load the model
+model = joblib.load(model_path)
+
 st.title("📊 Customer Churn Prediction")
 st.write("Adjust the features below to see the churn prediction:")
 
